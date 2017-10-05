@@ -1,0 +1,53 @@
+package set;
+
+public class BinaryTreeQueue implements IQueue {
+	
+	//========Données membres========
+	private BinaryTree [] table;
+	private int size;
+	
+	public BinaryTreeQueue (int size)
+	{
+		this.size = size;
+		this.table = new BinaryTree [size];
+	}
+	
+	public void allocate ()
+	{
+		this.size = size << 1;
+		BinaryTree [] newTable = new BinaryTree [this.size];
+		System.arraycopy(table, 0, newTable, 0, size);
+	}
+	
+	@Override
+	public void push_front(Object o) {
+		if (this.table[this.size] != null)
+			this.allocate();
+
+	}
+
+	@Override
+	public Object pop_back() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean empty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void clear() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

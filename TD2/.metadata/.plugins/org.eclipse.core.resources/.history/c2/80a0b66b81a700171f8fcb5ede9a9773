@@ -1,0 +1,76 @@
+package set;
+
+public abstract class BinaryTree implements IBinaryTree 
+{
+	
+	private Object data;
+	private BinaryTree leftChild, rightChild;
+
+	BinaryTree(Object data, BinaryTree leftChild, BinaryTree rightChild) 
+	{
+		this.data = data;
+		this.leftChild = leftChild;
+		this.rightChild = rightChild;
+	}
+
+	BinaryTree(Object data) {
+		this.data = data;
+		this.rightChild = null;
+		this.leftChild = null;
+	}
+
+	@Override
+	public Object getData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setData(Object data) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public IBinaryTree getLeftChild() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IBinaryTree getRightChild() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setLeftChild(IBinaryTree leftChild) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void setRightChild(IBinaryTree rightChild) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean isLeaf() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int getHeight() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getNumberNodes() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

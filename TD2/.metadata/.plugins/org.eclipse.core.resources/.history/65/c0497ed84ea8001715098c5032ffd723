@@ -1,0 +1,16 @@
+package set;
+
+public class BinarySearchTree
+{
+
+		public boolean contains(IComparable element)
+		{
+			return false;
+			
+		}
+		
+		public void add(IComparable element)
+		{
+			
+		}
+}

@@ -1,0 +1,96 @@
+package set;
+
+public abstract class BinaryTree implements IBinaryTree 
+{
+	//========Données membres========
+	private Object data;
+	private BinaryTree leftChild, rightChild;
+
+	//========Constructeur===========
+	BinaryTree(Object data, BinaryTree leftChild, BinaryTree rightChild) 
+	{
+		this.data = data;
+		this.leftChild = leftChild;
+		this.rightChild = rightChild;
+	}
+
+	BinaryTree(Object data) 
+	{
+		this.data = data;
+		this.rightChild = null;
+		this.leftChild = null;
+	}
+	
+	public String toString()
+	{
+		return null;
+		
+	}
+	
+	@Override
+	public Object getData() 
+	{
+		return data;
+	}
+
+	@Override
+	public void setData(Object data) 
+	{
+		this.data = data;
+	}
+
+	@Override
+	public IBinaryTree getLeftChild() {
+		return leftChild;
+	}
+
+	@Override
+	public IBinaryTree getRightChild() {
+		return rightChild;
+	}
+
+	@Override
+	public void setLeftChild(IBinaryTree leftChild) {
+		this.leftChild = (BinaryTree) leftChild;
+	}
+
+	@Override
+	public void setRightChild(IBinaryTree rightChild) {
+		this.rightChild = (BinaryTree) rightChild;
+
+	}
+
+	@Override
+	public boolean isLeaf() {
+		if (this.rightChild == null && this.leftChild == null)
+			return true;
+		return false;
+	}
+
+	@Override
+	public int getHeight() {
+		if (this.rightChild != null)
+		{
+			if(this.leftChild != null)
+				return 1 + Math.max(this.rightChild.getHeight(), this.leftChild.getHeight());
+			return 1 + this.rightChild.getHeight();
+		}
+		if(this.leftChild != null)
+			return 1 + this.leftChild.getHeight();
+		return 0;
+	}
+
+	@Override
+	public int getNumberNodes() 
+	{
+		if(this.leftChild != null)
+		{
+			if (this.rightChild != null)
+				return 1 + this.rightChild.getNumberNodes() + this.rightChild.getNumberNodes();
+			return 1 + this.leftChild.getNumberNodes();
+		}
+		if (this.rightChild != null)
+			return 1 + this.rightChild.getNumberNodes();
+		return 0;
+	}	
+		

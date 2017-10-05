@@ -1,0 +1,2 @@
+INDEX VERSION 1.130+/autofs/netapp/travail/gchupin/M1/ApprocheObjet/Type de données/.metadata/.plugins/org.eclipse.jdt.core
+3027641082.index

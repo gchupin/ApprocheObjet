@@ -1,0 +1,25 @@
+package set;
+
+public class BreadthFirstIterator implements IIterator 
+{
+
+	public BreadthFirstIterator (BinaryTree tree)
+	{
+		
+	}
+	
+	@Override
+	public boolean hasNext() 
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Object next() 
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

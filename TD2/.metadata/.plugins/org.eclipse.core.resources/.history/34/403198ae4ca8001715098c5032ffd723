@@ -1,0 +1,26 @@
+package set;
+
+public class BreadthFirstIterator implements IIterator 
+{
+	private BinaryTreeQueue tree;
+
+	public BreadthFirstIterator (BinaryTreeQueue tree)
+	{
+		this.tree = (BinaryTreeQueue) tree.pop_back();	
+	}
+	
+	@Override
+	public boolean hasNext() 
+	{
+		if (next != null)
+			return true;
+		return false;
+	}
+
+	@Override
+	public Object next() 
+	{
+		
+	}
+
+}
