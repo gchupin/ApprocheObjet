@@ -2,5 +2,7 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="set.BinaryTree"/>
+<fullyQualifiedTypeName name="set.BreadthFirstIterator"/>
+<fullyQualifiedTypeName name="set.ISet"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

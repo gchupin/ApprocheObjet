@@ -1,9 +1,0 @@
-package set;
-
-public abstract class BinaryTreeQueue implements IQueue{
-
-	public void allocate () 
-	{
-		
-	}
-}

@@ -4,7 +4,7 @@ public abstract class BinaryTree implements IBinaryTree
 {
 	//===Données membres===
 	private Object data;
-	private BinaryTree leftChild, rightChild;
+	protected BinaryTree leftChild, rightChild;
 
 	//===Constructeurs===
 	public BinaryTree(Object data, BinaryTree leftChild, BinaryTree rightChild) 
